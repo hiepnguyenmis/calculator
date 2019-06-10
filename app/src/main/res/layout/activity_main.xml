@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ed_result"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnKey7"
+                android:text="7"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKey8"
+                android:text="8"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKey9"
+                android:text="9"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKeyPlus"
+                android:text="+"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnKey4"
+                android:text="4"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKey5"
+                android:text="5"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKey6"
+                android:text="6"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKeyminus"
+                android:text="-"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnKey1"
+                android:text="1"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKey2"
+                android:text="2"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKey3"
+                android:text="3"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKeymultiply"
+                android:text="X"
+                android:textSize="25sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnKey0"
+                android:layout_width="wrap_content"
+                android:layout_span="2"
+                android:text="0"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKeypoint"
+                android:text="."
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/btnKeydivided"
+                android:text="/"
+                android:textSize="25sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnKeyequal"
+                android:layout_width="wrap_content"
+                android:layout_span="4"
+                android:text="="
+                android:textSize="25sp" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/ed_result"
+        android:layout_width="348dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="272dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edHSa"
+        android:layout_width="343dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/ed_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
